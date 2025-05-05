@@ -136,6 +136,12 @@
   .header-language {
     width: 70px;
   }
+  .btn-show {
+    height: 160px;
+    opacity: 1;
+    transform: translateY(0);
+    line-height: 1.8;
+  }
 }
 .hero {
   width: 100%;

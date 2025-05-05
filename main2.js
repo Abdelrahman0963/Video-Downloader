@@ -21,7 +21,7 @@ const translations = {
         languageText: 'Lingua<i class="fa-solid fa-angle-down"></i>',
         fontFamily: '"Italiana", sans-serif',
         title: 'Scarica <span style="color:#db168f">video Instagram</span> in modo facile e veloce con SaveMedia',
-        description: 'Save Media è un app che ti consente di utilizzare gli strumenti che usi per scaricare i tuoi video in modo rapido e semplice.'
+        description: 'Save Media è un app che ti consente di utilizzare gli strumenti che usi per scaricare i tuoi video in modo rapido e semplice.',
     }
 };
 document.getElementById("ar").addEventListener("click", () => changeLanguage("ar"));
@@ -36,15 +36,17 @@ function changeLanguage(lang) {
     const lun2 = document.getElementById("title-site-h1");
     const lun3 = document.getElementById("title-site-p");
 
+    lun.innerHTML = data.languageText;
+    lun.style.fontFamily = data.fontFamily;
+    lun2.innerHTML = data.title;
+    lun2.style.fontFamily = data.fontFamily;
+    lun3.innerHTML = data.description;
+    lun3.style.fontFamily = data.fontFamily;
     if (window.innerWidth <= 768) {
         lun.innerHTML = `<i class="fa-solid fa-globe"></i> <i class="fa-solid fa-angle-down"></i>`;;
-        lun.style.fontFamily = data.fontFamily;
-        lun2.innerHTML = data.title;
-        lun2.style.fontFamily = data.fontFamily;
-        lun3.innerHTML = data.description;
-        lun3.style.fontFamily = data.fontFamily;
-    } else { }
+    } else {
 
+    }
     localStorage.setItem("lang", lang);
 }
 window.addEventListener("load", () => {

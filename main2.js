@@ -16,11 +16,19 @@ const translations = {
         fontFamily: '"Cal Sans", sans-serif',
         title: 'Téléchargement rapide et facile de <span style="color:#db168f">Videos Instagram</span> avec SaveMedia',
         description: "SaveMedia est une application qui vous permet d'utiliser les moyens que vous utilisez pour télécharger vos vidéos à partir de vidéos Instagram rapidement et facilement."
+    },
+    it: {
+        languageText: 'Lingua<i class="fa-solid fa-angle-down"></i>',
+        fontFamily: '"Italiana", sans-serif',
+        title: 'Scarica <span style="color:#db168f">video Instagram</span> in modo facile e veloce con SaveMedia',
+        description: 'Save Media è un app che ti consente di utilizzare gli strumenti che usi per scaricare i tuoi video in modo rapido e semplice.'
     }
 };
 document.getElementById("ar").addEventListener("click", () => changeLanguage("ar"));
 document.getElementById("en").addEventListener("click", () => changeLanguage("en"));
 document.getElementById("fr").addEventListener("click", () => changeLanguage("fr"));
+document.getElementById("it").addEventListener("click", () => changeLanguage("it"));
+
 
 function changeLanguage(lang) {
     const data = translations[lang];

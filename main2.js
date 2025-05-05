@@ -37,15 +37,13 @@ function changeLanguage(lang) {
     const lun3 = document.getElementById("title-site-p");
 
     if (window.innerWidth <= 768) {
-        lun.innerHTML = `<i class="fa-solid fa-globe"></i> <i class="fa-solid fa-angle-down"></i>`;
-    } else {
-        lun.innerHTML = data.languageText;
+        lun.innerHTML = `<i class="fa-solid fa-globe"></i> <i class="fa-solid fa-angle-down"></i>`;;
         lun.style.fontFamily = data.fontFamily;
         lun2.innerHTML = data.title;
         lun2.style.fontFamily = data.fontFamily;
         lun3.innerHTML = data.description;
         lun3.style.fontFamily = data.fontFamily;
-    }
+    } else { }
 
     localStorage.setItem("lang", lang);
 }

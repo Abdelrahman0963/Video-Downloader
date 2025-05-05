@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/icons/play.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Outfit:wght@100..900&family=Playwrite+RO:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/main.css" />
+    <title>Video Downloader</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <h1>Logo</h1>
+          <div class="header-title">
+            <h1><a href="#">SaveMedia.App</a></h1>
+          </div>
+        </div>
+      </div>
+      <div class="header-language">
+        <button class="btn-language" id="Language">
+          Language <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <ul class="language-list">
+          <li><a href="#" class="lis-lun" id="ar">Arabic</a></li>
+          <li><a href="#" class="lis-lun" id="en">English</a></li>
+          <li><a href="#" class="lis-lun" id="fr">French</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <div class="hero">
+        <div class="hero-container">
+          <nav class="hero-NavPar">
+            <ul class="hero-Nav">
+              <li class="active">
+                <span><i class="fa-solid fa-video"></i></span>
+                <a href="#">Video</a>
+              </li>
+              <li>
+                <span><i class="fa-solid fa-image"></i></span>
+                <a href="#">Photo</a>
+              </li>
+              <li>
+                <span><i class="fa-brands fa-square-instagram"></i></span>
+                <a href="#">Reels</a>
+              </li>
+              <li>
+                <span><i class="fa-solid fa-circle-notch"></i></span>
+                <a href="#">Story</a>
+              </li>
+              <li>
+                <span><i class="fa-solid fa-tv"></i></span>
+                <a href="#">IGTV</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="hero-carousel">
+            <div class="carousel-content">
+              <h1>instagram carousel Download</h1>
+              <p>Donwload video, Photo, reels, story, IGTV from instagram</p>
+            </div>
+            <div class="hero-btn">
+              <input
+                id="input"
+                type="url"
+                placeholder="https://www.instagram.com/reel/CgkDpIjD2oV/?igshid=NTc4MTIwNjQ2YQ=="
+              />
+              <button id="paste"><i class="fa-solid fa-paste"></i></button>
+              <button id="donwload">Donwload</button>
+            </div>
+          </div>
+        </div>
+        <div class="hero-spinner"></div>
+      </div>
+      <div class="title-site">
+        <h1 id="title-site-h1">
+          Fast and Easy
+          <span id="title-site-span">Instagram Video</span> Download With
+          SaveMedia
+        </h1>
+        <div class="title-content">
+          <p id="title-site-p">
+            <strong>Save Media</strong>is an app that allows you to use the
+            tools you use to download your videos quickly and easily.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="main2.js"></script>
+  </body>
+</html>

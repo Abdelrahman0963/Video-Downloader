@@ -34,5 +34,5 @@ let pastTow = document.getElementById("paste");
 if (innerWidth < 768) {
     pastTow.innerHTML = `<i class="fa-solid fa-paste"></i>`;
 } else {
-    pastTow.innerHTML = `<i class="fa-solid fa-paste"></i> PASTE`;
+    pastTow.innerHTML = `<i class="fa-solid fa-paste"></i>`;
 }

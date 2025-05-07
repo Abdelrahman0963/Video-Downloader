@@ -4,28 +4,32 @@ const translations = {
         fontFamily: '"Noto Kufi Arabic", sans-serif',
         title: 'تنزيل <span style="color:#db168f">فيديو انستغرام</span> بسرعة وسهولة مع SaveMedia',
         description: 'SaveMedia هو تطبيق يسمح لك باستخدام الوسائل التي تستخدمها لتنزيل فيديوهاتك من بسرعة وسهولة',
-        buttonText: 'تنزيل'
+        buttonText: 'تنزيل',
+        pasteText: '<i class="fa-solid fa-paste"></i> الصق'
     },
     en: {
         languageText: 'Language <i class="fa-solid fa-angle-down"></i>',
         fontFamily: '"Cal Sans", sans-serif',
         title: 'Fast and Easy <span style="color:#db168f">Instagram videos</span> Download With SaveMedia',
         description: 'SaveMedia is an app that allows you to use the tools you use to download your videos quickly and easily.',
-        buttonText: 'Download'
+        buttonText: 'Download',
+        pasteText: 'Paste <i class="fa-solid fa-paste"></i>'
     },
     fr: {
         languageText: 'la langue <i class="fa-solid fa-angle-down"></i>',
         fontFamily: '"Cal Sans", sans-serif',
         title: 'Téléchargement rapide et facile de <span style="color:#db168f">Videos Instagram</span> avec SaveMedia',
         description: "SaveMedia est une application qui vous permet d'utiliser les moyens que vous utilisez pour télécharger vos vidéos à partir de vidéos Instagram rapidement et facilement.",
-        buttonText: 'Télécharger'
+        buttonText: 'Télécharger',
+        pasteText: 'Coller <i class="fa-solid fa-paste"></i>'
     },
     it: {
         languageText: 'Lingua<i class="fa-solid fa-angle-down"></i>',
         fontFamily: '"Italiana", sans-serif',
         title: 'Scarica <span style="color:#db168f">video Instagram</span> in modo facile e veloce con SaveMedia',
         description: 'Save Media è un app che ti consente di utilizzare gli strumenti che usi per scaricare i tuoi video in modo rapido e semplice.',
-        buttonText: 'Scarica'
+        buttonText: 'Scarica',
+        pasteText: 'Incolla <i class="fa-solid fa-paste"></i>'
     }
 };
 document.getElementById("ar").addEventListener("click", () => changeLanguage("ar"));
@@ -40,6 +44,7 @@ function changeLanguage(lang) {
     const lun2 = document.getElementById("title-site-h1");
     const lun3 = document.getElementById("title-site-p");
     const btn = document.getElementById("donwload");
+    const pasteBtn = document.getElementById("paste");
 
     lun.innerHTML = data.languageText;
     lun.style.fontFamily = data.fontFamily;
@@ -48,8 +53,10 @@ function changeLanguage(lang) {
     lun3.innerHTML = data.description;
     lun3.style.fontFamily = data.fontFamily;
     btn.innerHTML = data.buttonText;
+    pasteBtn.innerHTML = data.pasteText;
     if (window.innerWidth <= 768) {
-        lun.innerHTML = `<i class="fa-solid fa-globe"></i> <i class="fa-solid fa-angle-down"></i>`;;
+        lun.innerHTML = `<i class="fa-solid fa-globe"></i> <i class="fa-solid fa-angle-down"></i>`;
+        pasteBtn.innerHTML = `<i class="fa-solid fa-paste"></i>`;
     } else {
 
     }

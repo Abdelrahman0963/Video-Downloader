@@ -17,7 +17,8 @@ const translations = {
         cardsHeader: `DonwloadInsta.App جميع مميزات تطبيق `,
         cardTitleH1: `تنزيل فيديو الانستجرام `,
         cardTitleP: `يتيح لك Downloadinsta تنزيل فيديو الانستجرام من المحتوى الخاص بك. يدعم DownloadInsta تنزيل مقاطع الفيديو للعديد من أنواع الفيديو من الانستجرام`,
-
+        cardTitleTwoH1: `تنزيل صور الانستجرام `,
+        cardTitleTwoP: `يتيح لك Downloadinsta تنزيل صور الانستجرام من المحتوى الخاص بك. يدعم DownloadInsta تنزيل صور الانستجرام`,
     },
     en: {
         languageText: 'Language <i class="fa-solid fa-angle-down"></i>',
@@ -37,6 +38,8 @@ const translations = {
         cardsHeader: `All features of DonwloadInsta.App`,
         cardTitleH1: `Instagram video download`,
         cardTitleP: `Downloadinsta allows you to download instagram video from your own content. DonwloadInsta supports download videos for many video types from instagram`,
+        cardTitleTwoH1: `Instagram photo download`,
+        cardTitleTwoP: `Downloadinsta allows you to download instagram photos from your own content. DonwloadInsta supports download photos from instagram`,
     },
     fr: {
         languageText: 'la langue <i class="fa-solid fa-angle-down"></i>',
@@ -56,6 +59,8 @@ const translations = {
         cardsHeader: `Toutes les fonctionnalités de DonwloadInsta.App`,
         cardTitleH1: `Télécharger des videos Instagram`,
         cardTitleP: `Télécharger insta vous permet de télécharger des vidéos Instagram à partir de votre propre contenu DonwloadInsta prend en charge le téléchargement de vidéos pour de nombreux types de vidéos à partir d'Instagram`,
+        cardTitleTwoH1: `Télécharger des photos Instagram`,
+        cardTitleTwoP: `Télécharger insta vous permet de télécharger des photos Instagram à partir de votre propre contenu DonwloadInsta prend en charge le téléchargement de photos à partir d'Instagram`,
     },
     it: {
         languageText: 'Lingua<i class="fa-solid fa-angle-down"></i>',
@@ -74,7 +79,9 @@ const translations = {
         cardThreeH3: `Velocemente puoi scaricare il video, l'immagine, i reels, la storia, IGTV`,
         cardsHeader: `Tutte le funzionalità di DonwloadInsta.App`,
         cardTitleH1: `Scarica video da Instagram`,
-        cardTitleP: `Scarica insta ti consente di scaricare video di Instagram dai tuoi contenuti DonwloadInsta supporta il download di video per molti tipi di video da Instagram`
+        cardTitleP: `Scarica insta ti consente di scaricare video di Instagram dai tuoi contenuti DonwloadInsta supporta il download di video per molti tipi di video da Instagram`,
+        cardTitleTwoH1: `Scarica foto da Instagram`,
+        cardTitleTwoP: `Scarica insta ti consente di scaricare foto da Instagram dai tuoi contenuti DonwloadInsta supporta il download di foto da Instagram`,
     }
 };
 document.getElementById("ar").addEventListener("click", () => changeLanguage("ar"));
@@ -103,6 +110,8 @@ function changeLanguage(lang) {
     const cardsTitle = document.getElementById("cards-content-h1");
     const cardTitleOne = document.getElementById("card-title-h1");
     const cardTitleOne2 = document.getElementById("card-title-p");
+    const cardTitleTwo = document.getElementById("card-title-two-h1");
+    const cardTitleTwo2 = document.getElementById("card-title-two-p");
     lun.innerHTML = data.languageText;
     lun.style.fontFamily = data.fontFamily;
     lun2.innerHTML = data.title;
@@ -133,6 +142,10 @@ function changeLanguage(lang) {
     cardTitleOne2.innerHTML = data.cardTitleP;
     cardTitleOne2.style.fontFamily = data.fontFamily;
     pasteBtn.innerHTML = data.pasteText;
+    cardTitleTwo.innerHTML = data.cardTitleTwoH1;
+    cardTitleTwo.style.fontFamily = data.fontFamily;
+    cardTitleTwo2.innerHTML = data.cardTitleTwoP;
+    cardTitleTwo2.style.fontFamily = data.fontFamily;
     if (window.innerWidth <= 768) {
         pUrl.innerHTML = `https://www.instagram.com/reel/`;
         pUrl2.innerHTML = `https://www.instagram.com/`;

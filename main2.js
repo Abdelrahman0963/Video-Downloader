@@ -21,10 +21,10 @@ const translations = {
         cardTitleTwoP: `يتيح لك Downloadinsta تنزيل صور الانستجرام من المحتوى الخاص بك. يدعم DownloadInsta تنزيل صور الانستجرام`,
         cardTitleThreeH1: `تحميل ريلز الانستقرام`,
         cardTitleThreeP: `يتيح لك Downloadinsta تنزيل ريلز الانستقرام من المحتوى الخاص بك. يدعم DownloadInsta تنزيل ريلز الانستقرام`,
-        cardTitleFourH1: `تحميل IGTV الانستقرام`,
-        cardTitleFourP: `يتيح لك Downloadinsta تنزيل IGTV الانستقرام من المحتوى الخاص بك. يدعم DownloadInsta تنزيل IGTV الانستقرام`,
-        cardTitleFiveH1: `تحميل قصة الانستقرام`,
-        cardTitleFiveP: `يتيح لك Downloadinsta تنزيل قصة الانستقرام من المحتوى الخاص بك. يدعم DownloadInsta تنزيل قصة الانستقرام`,
+        cardTitleFourH1: `تحميل قصة الانستقرام`,
+        cardTitleFourP: `يتيح لك Downloadinsta تنزيل قصة الانستقرام من المحتوى الخاص بك. يدعم DownloadInsta تنزيل قصة الانستقرام`,
+        cardTitleFiveH1: `تحميل IGTV الانستقرام`,
+        cardTitleFiveP: `يتيح لك Downloadinsta تنزيل IGTV الانستقرام من المحتوى الخاص بك. يدعم DownloadInsta تنزيل IGTV الانستقرام`,
     },
     en: {
         languageText: 'Language <i class="fa-solid fa-angle-down"></i>',
@@ -48,10 +48,10 @@ const translations = {
         cardTitleTwoP: `Downloadinsta allows you to download instagram photos from your own content. DonwloadInsta supports download photos from instagram`,
         cardTitleThreeH1: `Instagram reels download`,
         cardTitleThreeP: `Downloadinsta allows you to download instagram reels from your own content. DonwloadInsta supports download reels from instagram`,
-        cardTitleFourH1: `Instagram IGTV download`,
-        cardTitleFourP: `Downloadinsta allows you to download instagram IGTV from your own content. DonwloadInsta supports download IGTV from instagram`,
-        cardTitleFiveH1: `Instagram story download`,
-        cardTitleFiveP: `Downloadinsta allows you to download instagram stories from your own content. DonwloadInsta supports download stories from instagram`,
+        cardTitleFourH1: `Instagram story download`,
+        cardTitleFourP: `Downloadinsta allows you to download instagram stories from your own content. DonwloadInsta supports download stories from instagram`,
+        cardTitleFiveH1: `Instagram IGTV download`,
+        cardTitleFiveP: `Downloadinsta allows you to download instagram IGTV from your own content. DonwloadInsta supports download IGTV from instagram`,
     },
     fr: {
         languageText: 'la langue <i class="fa-solid fa-angle-down"></i>',
@@ -112,8 +112,6 @@ document.getElementById("ar").addEventListener("click", () => changeLanguage("ar
 document.getElementById("en").addEventListener("click", () => changeLanguage("en"));
 document.getElementById("fr").addEventListener("click", () => changeLanguage("fr"));
 document.getElementById("it").addEventListener("click", () => changeLanguage("it"));
-
-
 function changeLanguage(lang) {
     const data = translations[lang];
     const lun = document.getElementById("Language");

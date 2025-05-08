@@ -1,10 +1,16 @@
 let btn = document.querySelector(".btn-language");
 let languageList = document.querySelector(".language-list");
+
 btn.addEventListener("click", (outPord) => {
+    let lisLun = document.querySelectorAll(".lis-lun");
     outPord.stopPropagation();
     languageList.classList.toggle("btn-show");
+    lisLun.forEach((lun) => {
+        lun.addEventListener("click", () => {
+            languageList.classList.remove("btn-show");
+        });
+    });
 });
-
 document.addEventListener("click", (outPord) => {
     if (!languageList.contains(outPord.target) && !btn.contains(outPord.target)) {
         languageList.classList.remove("btn-show");

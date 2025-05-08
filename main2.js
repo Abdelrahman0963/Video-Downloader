@@ -2,8 +2,8 @@ const translations = {
     ar: {
         languageText: 'اللغه <i class="fa-solid fa-angle-down"></i>',
         fontFamily: '"Noto Kufi Arabic", sans-serif',
-        title: 'تنزيل <span style="color:#db168f">فيديو انستغرام</span> بسرعة وسهولة مع SaveMedia',
-        description: 'SaveMedia هو تطبيق يسمح لك باستخدام الوسائل التي تستخدمها لتنزيل فيديوهاتك من بسرعة وسهولة',
+        title: 'تنزيل <span style="color:#db168f">فيديو انستغرام</span> بسرعة وسهولة مع DonwloadInsta',
+        description: 'DonwloadInsta هو تطبيق يسمح لك باستخدام الوسائل التي تستخدمها لتنزيل فيديوهاتك من بسرعة وسهولة',
         buttonText: 'تنزيل',
         pasteText: '<i class="fa-solid fa-paste"></i> الصق',
         titleHead: 'كيفية التحميل من <span style="color:#db168f"> انستغرام؟</span> ',
@@ -18,8 +18,8 @@ const translations = {
     en: {
         languageText: 'Language <i class="fa-solid fa-angle-down"></i>',
         fontFamily: '"Cal Sans", sans-serif',
-        title: 'Fast and Easy <span style="color:#db168f">Instagram videos</span> Download With SaveMedia',
-        description: 'SaveMedia is an app that allows you to use the tools you use to download your videos quickly and easily.',
+        title: 'Fast and Easy <span style="color:#db168f">Instagram videos</span> Download With DonwloadInsta',
+        description: 'DonwloadInsta is an app that allows you to use the tools you use to download your videos quickly and easily.',
         buttonText: 'Download',
         pasteText: 'Paste <i class="fa-solid fa-paste"></i>',
         titleHead: '<span style="color:#db168f">Instagram?</span> How to download from ',
@@ -35,8 +35,8 @@ const translations = {
     fr: {
         languageText: 'la langue <i class="fa-solid fa-angle-down"></i>',
         fontFamily: '"Cal Sans", sans-serif',
-        title: 'Téléchargement rapide et facile de <span style="color:#db168f">Videos Instagram</span> avec SaveMedia',
-        description: "SaveMedia est une application qui vous permet d'utiliser les moyens que vous utilisez pour télécharger vos vidéos à partir de vidéos Instagram rapidement et facilement.",
+        title: 'Téléchargement rapide et facile de <span style="color:#db168f">Videos Instagram</span> avec DonwloadInsta',
+        description: "DonwloadInsta est une application qui vous permet d'utiliser les moyens que vous utilisez pour télécharger vos vidéos à partir de vidéos Instagram rapidement et facilement.",
         buttonText: 'Télécharger',
         pasteText: 'Coller <i class="fa-solid fa-paste"></i>',
         titleHead: '<span style="color:#db168f">Instagram?</span> Comment telecharger de ',
@@ -51,7 +51,7 @@ const translations = {
     it: {
         languageText: 'Lingua<i class="fa-solid fa-angle-down"></i>',
         fontFamily: '"Italiana", sans-serif',
-        title: 'Scarica <span style="color:#db168f">video Instagram</span> in modo facile e veloce con SaveMedia',
+        title: 'Scarica <span style="color:#db168f">video Instagram</span> in modo facile e veloce con DonwloadInsta',
         description: 'Save Media è un app che ti consente di utilizzare gli strumenti che usi per scaricare i tuoi video in modo rapido e semplice.',
         buttonText: 'Scarica',
         pasteText: 'Incolla <i class="fa-solid fa-paste"></i>',
@@ -88,6 +88,7 @@ function changeLanguage(lang) {
     const cardTwo2 = document.getElementById("card-two-h3");
     const cardThree = document.getElementById("card-three-h1");
     const cardThree2 = document.getElementById("card-three-h3");
+
     lun.innerHTML = data.languageText;
     lun.style.fontFamily = data.fontFamily;
     lun2.innerHTML = data.title;
@@ -117,8 +118,6 @@ function changeLanguage(lang) {
         pUrl2.innerHTML = `https://www.instagram.com/`;
         lun.innerHTML = `<i class="fa-solid fa-globe"></i> <i class="fa-solid fa-angle-down"></i>`;
         pasteBtn.innerHTML = `<i class="fa-solid fa-paste"></i>`;
-    } else {
-
     }
     localStorage.setItem("lang", lang);
 }

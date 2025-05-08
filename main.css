@@ -17,6 +17,7 @@
   --padding-lg: 40px;
   --padding-md: 20px 5px;
 }
+
 .container {
   width: 100%;
   background: #eae8e8;
@@ -667,7 +668,6 @@
   line-height: 2;
 }
 .card-title h1 {
-  font-family: var(--fo-CalSans);
   font-weight: 500;
   font-size: 2rem;
   color: #db168f;

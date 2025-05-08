@@ -14,6 +14,10 @@ const translations = {
         cardTwoH3: `<h3 style="text-align: right">افتح تطبيق الانستجرام أو الموقع الإلكتروني والصق عنوان URL للفيديو أو الصورة أو البكرات أو القصة أو IGTV الذي تريد تنزيله</h3>`,
         cardThreeH1: `<h1 style="text-align: right">تـنــزيل</h1>`,
         cardThreeH3: `<h3 style="text-align: right">بسرعة IGTV يمكنك تنزيل الفيديو والصور والبكرات والقصة و  </h3>`,
+        cardsHeader: `DonwloadInsta.App جميع مميزات تطبيق `,
+        cardTitleH1: `تنزيل فيديو الانستجرام `,
+        cardTitleP: `يتيح لك Downloadinsta تنزيل فيديو الانستجرام من المحتوى الخاص بك. يدعم DownloadInsta تنزيل مقاطع الفيديو للعديد من أنواع الفيديو من الانستجرام`,
+
     },
     en: {
         languageText: 'Language <i class="fa-solid fa-angle-down"></i>',
@@ -30,7 +34,9 @@ const translations = {
         cardTwoH3: `Open the Instagram app or website and paste the URL of the video or image or reels or IGTV you want to download.`,
         cardThreeH1: `Download`,
         cardThreeH3: `Quickly you can download the video, photo, reels, story, IGTV`,
-
+        cardsHeader: `All features of DonwloadInsta.App`,
+        cardTitleH1: `Instagram video download`,
+        cardTitleP: `Downloadinsta allows you to download instagram video from your own content. DonwloadInsta supports download videos for many video types from instagram`,
     },
     fr: {
         languageText: 'la langue <i class="fa-solid fa-angle-down"></i>',
@@ -47,6 +53,9 @@ const translations = {
         cardTwoH3: `Ouvrir l'application Instagram ou le site web et coller l'URL du video ou de l'image ou des reels ou IGTV que vous souhaitez telecharger.`,
         cardThreeH1: `Télécharger`,
         cardThreeH3: `Rapidement vous pouvez telecharger la video, l'image, les reels, l'histoire, IGTV`,
+        cardsHeader: `Toutes les fonctionnalités de DonwloadInsta.App`,
+        cardTitleH1: `Télécharger des videos Instagram`,
+        cardTitleP: `Télécharger insta vous permet de télécharger des vidéos Instagram à partir de votre propre contenu DonwloadInsta prend en charge le téléchargement de vidéos pour de nombreux types de vidéos à partir d'Instagram`,
     },
     it: {
         languageText: 'Lingua<i class="fa-solid fa-angle-down"></i>',
@@ -63,6 +72,9 @@ const translations = {
         cardTwoH3: `Apri l'applicazione Instagram o il sito web e incolla l'URL del video o dell'immagine o dei reels o IGTV che vuoi scaricare.`,
         cardThreeH1: `Scarica`,
         cardThreeH3: `Velocemente puoi scaricare il video, l'immagine, i reels, la storia, IGTV`,
+        cardsHeader: `Tutte le funzionalità di DonwloadInsta.App`,
+        cardTitleH1: `Scarica video da Instagram`,
+        cardTitleP: `Scarica insta ti consente di scaricare video di Instagram dai tuoi contenuti DonwloadInsta supporta il download di video per molti tipi di video da Instagram`
     }
 };
 document.getElementById("ar").addEventListener("click", () => changeLanguage("ar"));
@@ -88,7 +100,9 @@ function changeLanguage(lang) {
     const cardTwo2 = document.getElementById("card-two-h3");
     const cardThree = document.getElementById("card-three-h1");
     const cardThree2 = document.getElementById("card-three-h3");
-
+    const cardsTitle = document.getElementById("cards-content-h1");
+    const cardTitleOne = document.getElementById("card-title-h1");
+    const cardTitleOne2 = document.getElementById("card-title-p");
     lun.innerHTML = data.languageText;
     lun.style.fontFamily = data.fontFamily;
     lun2.innerHTML = data.title;
@@ -112,6 +126,12 @@ function changeLanguage(lang) {
     cardThree.style.fontFamily = data.fontFamily;
     cardThree2.innerHTML = data.cardThreeH3;
     cardThree2.style.fontFamily = data.fontFamily;
+    cardsTitle.innerHTML = data.cardsHeader;
+    cardsTitle.style.fontFamily = data.fontFamily;
+    cardTitleOne.innerHTML = data.cardTitleH1;
+    cardTitleOne.style.fontFamily = data.fontFamily;
+    cardTitleOne2.innerHTML = data.cardTitleP;
+    cardTitleOne2.style.fontFamily = data.fontFamily;
     pasteBtn.innerHTML = data.pasteText;
     if (window.innerWidth <= 768) {
         pUrl.innerHTML = `https://www.instagram.com/reel/`;

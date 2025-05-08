@@ -112,6 +112,12 @@
   border-bottom: 1px solid #ff7131;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    padding: var(--padding-lg);
+  }
+  .header-language {
+    width: 50px;
+  }
 }
 @media (max-width: 767px) {
   body {
@@ -326,6 +332,10 @@
   .hero-btn {
     width: 85%;
   }
+  .hero-input {
+    display: flex;
+    align-items: center;
+  }
 }
 @media (max-width: 767px) {
   .hero {
@@ -361,14 +371,32 @@
     font-weight: 600px;
   }
   .hero-btn {
-    width: 65%;
+    width: 80%;
     padding-top: 25px;
+    gap: 5px;
+    flex-direction: column;
   }
   .hero-btn input {
-    margin-left: -20px;
+    width: 310px;
+    margin-left: -60px;
+  }
+  .hero-btn #paste {
+    width: 55px;
+    transform: translateX(-70px);
+    -webkit-transform: translateX(-70px);
+    -moz-transform: translateX(-70px);
+    -ms-transform: translateX(-70px);
+    -o-transform: translateX(-70px);
   }
   .hero-btn #donwload {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    height: 50px;
+    width: 128px;
+    transform: translateX(-50px);
+    -webkit-transform: translateX(-50px);
+    -moz-transform: translateX(-50px);
+    -ms-transform: translateX(-50px);
+    -o-transform: translateX(-50px);
   }
 }
 .title-site {
@@ -401,6 +429,12 @@
   .title-site p {
     font-size: 1rem;
   }
+  .title-site #title-site-h1 {
+    font-size: 3rem;
+  }
+  .title-site p {
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 767px) {
   .title-site {
@@ -426,16 +460,18 @@
   align-items: center;
   gap: 20px;
 }
-.laren-content-one {
-  width: 100%;
+.laren-content-card {
+  width: 80%;
   background: #fff;
   cursor: not-allowed;
+  box-shadow: 0px 0px 5px 0px #999;
 }
-.laren-content-one::selection {
+.laren-content-card::selection {
   background-color: #fff;
   color: #000;
 }
-.content-head {
+.content-head,
+.content-head2 {
   background: red;
   width: 100%;
   height: 70px;
@@ -445,7 +481,18 @@
   padding: 20px;
   position: relative;
 }
-.head-p {
+.content-head2 {
+  background: #fff204;
+}
+.content-head3 {
+  background: #999;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head-p,
+.head-p2 {
   background: #fff;
   width: 100%;
   height: 40px;
@@ -453,9 +500,50 @@
   display: flex;
   align-items: center;
 }
+.head-p2 {
+  justify-content: space-between;
+  border: 3px solid #f10505;
+}
+.head-p3 {
+  background: #fff204;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.head-p3::selection {
+  background-color: #fff204;
+  color: #fff;
+}
+.head-p3 h1 {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.head-p3 h1 i {
+  color: #04ff58;
+}
 .head-p p {
   font-size: 1rem;
   font-weight: 400;
+}
+.card-past {
+  width: 80px;
+  height: 30px;
+  background: #eae8e8;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
 .point-icon {
   position: absolute;
@@ -475,7 +563,71 @@
   font-weight: 700;
   font-size: 1.8rem;
 }
+.content-text h1::selection {
+  color: #f10505;
+}
 .content-text h3 {
   font-weight: 300;
   font-size: 1.2rem;
+}
+.laren-title {
+  padding: var(--padding-xl);
+  text-align: center;
+}
+.laren-title h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+  font-family: var(--fo-CalSans);
+}
+.laren-title h1 span {
+  color: #db168f;
+}
+.laren-title p {
+  font-family: var(--fo-CalSans);
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #4b4949;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .laren-container {
+    padding: var(--padding-lg);
+  }
+  .laren-title {
+    padding: var(--padding-lg);
+  }
+  .laren-title h1 {
+    font-size: 3rem;
+  }
+  .laren-title p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .laren-container {
+    padding: var(--padding-md);
+  }
+  .laren-title {
+    padding: var(--padding-md);
+  }
+  .laren-title h1 {
+    font-size: 1.2rem;
+  }
+  .laren-title p {
+    font-size: 0.8rem;
+  }
+  .card-past {
+    width: 45px;
+    font-size: 11px;
+  }
+  .laren-content-card {
+    width: 100%;
+  }
+  .point-icon {
+    right: 25px;
+  }
+  .head-p3 {
+    width: 255px;
+  }
 }

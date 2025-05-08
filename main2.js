@@ -19,6 +19,12 @@ const translations = {
         cardTitleP: `يتيح لك Downloadinsta تنزيل فيديو الانستجرام من المحتوى الخاص بك. يدعم DownloadInsta تنزيل مقاطع الفيديو للعديد من أنواع الفيديو من الانستجرام`,
         cardTitleTwoH1: `تنزيل صور الانستجرام `,
         cardTitleTwoP: `يتيح لك Downloadinsta تنزيل صور الانستجرام من المحتوى الخاص بك. يدعم DownloadInsta تنزيل صور الانستجرام`,
+        cardTitleThreeH1: `تحميل ريلز الانستقرام`,
+        cardTitleThreeP: `يتيح لك Downloadinsta تنزيل ريلز الانستقرام من المحتوى الخاص بك. يدعم DownloadInsta تنزيل ريلز الانستقرام`,
+        cardTitleFourH1: `تحميل IGTV الانستقرام`,
+        cardTitleFourP: `يتيح لك Downloadinsta تنزيل IGTV الانستقرام من المحتوى الخاص بك. يدعم DownloadInsta تنزيل IGTV الانستقرام`,
+        cardTitleFiveH1: `تحميل قصة الانستقرام`,
+        cardTitleFiveP: `يتيح لك Downloadinsta تنزيل قصة الانستقرام من المحتوى الخاص بك. يدعم DownloadInsta تنزيل قصة الانستقرام`,
     },
     en: {
         languageText: 'Language <i class="fa-solid fa-angle-down"></i>',
@@ -40,6 +46,12 @@ const translations = {
         cardTitleP: `Downloadinsta allows you to download instagram video from your own content. DonwloadInsta supports download videos for many video types from instagram`,
         cardTitleTwoH1: `Instagram photo download`,
         cardTitleTwoP: `Downloadinsta allows you to download instagram photos from your own content. DonwloadInsta supports download photos from instagram`,
+        cardTitleThreeH1: `Instagram reels download`,
+        cardTitleThreeP: `Downloadinsta allows you to download instagram reels from your own content. DonwloadInsta supports download reels from instagram`,
+        cardTitleFourH1: `Instagram IGTV download`,
+        cardTitleFourP: `Downloadinsta allows you to download instagram IGTV from your own content. DonwloadInsta supports download IGTV from instagram`,
+        cardTitleFiveH1: `Instagram story download`,
+        cardTitleFiveP: `Downloadinsta allows you to download instagram stories from your own content. DonwloadInsta supports download stories from instagram`,
     },
     fr: {
         languageText: 'la langue <i class="fa-solid fa-angle-down"></i>',
@@ -61,6 +73,12 @@ const translations = {
         cardTitleP: `Télécharger insta vous permet de télécharger des vidéos Instagram à partir de votre propre contenu DonwloadInsta prend en charge le téléchargement de vidéos pour de nombreux types de vidéos à partir d'Instagram`,
         cardTitleTwoH1: `Télécharger des photos Instagram`,
         cardTitleTwoP: `Télécharger insta vous permet de télécharger des photos Instagram à partir de votre propre contenu DonwloadInsta prend en charge le téléchargement de photos à partir d'Instagram`,
+        cardTitleThreeH1: `Télécharger des reels Instagram`,
+        cardTitleThreeP: `Télécharger insta vous permet de télécharger des reels Instagram à partir de votre propre contenu DonwloadInsta prend en charge le téléchargement de reels à partir d'Instagram`,
+        cardTitleFourH1: `Télécharger des IGTV Instagram`,
+        cardTitleFourP: `Télécharger insta vous permet de télécharger des IGTV Instagram à partir de votre propre contenu DonwloadInsta prend en charge le téléchargement de IGTV à partir d'Instagram`,
+        cardTitleFiveH1: `Télécharger des histoires Instagram`,
+        cardTitleFiveP: `Télécharger insta vous permet de télécharger des histoires Instagram à partir de votre propre contenu DonwloadInsta prend en charge le téléchargement de histoires à partir d'Instagram`,
     },
     it: {
         languageText: 'Lingua<i class="fa-solid fa-angle-down"></i>',
@@ -82,6 +100,12 @@ const translations = {
         cardTitleP: `Scarica insta ti consente di scaricare video di Instagram dai tuoi contenuti DonwloadInsta supporta il download di video per molti tipi di video da Instagram`,
         cardTitleTwoH1: `Scarica foto da Instagram`,
         cardTitleTwoP: `Scarica insta ti consente di scaricare foto da Instagram dai tuoi contenuti DonwloadInsta supporta il download di foto da Instagram`,
+        cardTitleThreeH1: `Scarica reels da Instagram`,
+        cardTitleThreeP: `Scarica insta ti consente di scaricare reels da Instagram dai tuoi contenuti DonwloadInsta supporta il download di reels da Instagram`,
+        cardTitleFourH1: `Scarica IGTV da Instagram`,
+        cardTitleFourP: `Scarica insta ti consente di scaricare IGTV da Instagram dai tuoi contenuti DonwloadInsta supporta il download di IGTV da Instagram`,
+        cardTitleFiveH1: `Scarica le storia da Instagram`,
+        cardTitleFiveP: `Scarica insta ti consente di scaricare le storia da Instagram dai tuoi contenuti DonwloadInsta supporta il download di storia da Instagram`,
     }
 };
 document.getElementById("ar").addEventListener("click", () => changeLanguage("ar"));
@@ -112,6 +136,12 @@ function changeLanguage(lang) {
     const cardTitleOne2 = document.getElementById("card-title-p");
     const cardTitleTwo = document.getElementById("card-title-two-h1");
     const cardTitleTwo2 = document.getElementById("card-title-two-p");
+    const cardTitleThree = document.getElementById("card-title-three-h1");
+    const cardTitleThree2 = document.getElementById("card-title-three-p");
+    const cardTitleFour = document.getElementById("card-title-four-h1");
+    const cardTitleFour2 = document.getElementById("card-title-four-p");
+    const cardTitleFive = document.getElementById("card-title-five-h1");
+    const cardTitleFive2 = document.getElementById("card-title-five-p");
     lun.innerHTML = data.languageText;
     lun.style.fontFamily = data.fontFamily;
     lun2.innerHTML = data.title;
@@ -146,6 +176,18 @@ function changeLanguage(lang) {
     cardTitleTwo.style.fontFamily = data.fontFamily;
     cardTitleTwo2.innerHTML = data.cardTitleTwoP;
     cardTitleTwo2.style.fontFamily = data.fontFamily;
+    cardTitleThree.innerHTML = data.cardTitleThreeH1;
+    cardTitleThree.style.fontFamily = data.fontFamily;
+    cardTitleThree2.innerHTML = data.cardTitleThreeP;
+    cardTitleThree2.style.fontFamily = data.fontFamily;
+    cardTitleFour.innerHTML = data.cardTitleFourH1;
+    cardTitleFour.style.fontFamily = data.fontFamily;
+    cardTitleFour2.innerHTML = data.cardTitleFourP;
+    cardTitleFour2.style.fontFamily = data.fontFamily;
+    cardTitleFive.innerHTML = data.cardTitleFiveH1;
+    cardTitleFive.style.fontFamily = data.fontFamily;
+    cardTitleFive2.innerHTML = data.cardTitleFiveP;
+    cardTitleFive2.style.fontFamily = data.fontFamily;
     if (window.innerWidth <= 768) {
         pUrl.innerHTML = `https://www.instagram.com/reel/`;
         pUrl2.innerHTML = `https://www.instagram.com/`;

@@ -119,6 +119,14 @@
   .header-language {
     width: 50px;
   }
+  .btn-show {
+    width: 100px;
+    transform: translate(-30px, 5px);
+    -webkit-transform: translate(-30px, 5px);
+    -moz-transform: translate(-30px, 5px);
+    -ms-transform: translate(-30px, 5px);
+    -o-transform: translate(-30px, 5px);
+  }
 }
 @media (max-width: 767px) {
   body {

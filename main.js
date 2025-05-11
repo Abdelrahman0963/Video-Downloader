@@ -42,3 +42,14 @@ if (innerWidth < 768) {
 } else {
     pastTow.innerHTML = `<i class="fa-solid fa-paste"></i>`;
 }
+
+let fqa = document.querySelectorAll("#fqa-list-btn");
+
+fqa.forEach((btn, click) => {
+    btn.addEventListener("click", () => {
+        let fqaList = document.querySelectorAll("#fqa-list-SR");
+        if (fqaList[click]) {
+            fqaList[click].classList.toggle("show-list");
+        }
+    });
+});

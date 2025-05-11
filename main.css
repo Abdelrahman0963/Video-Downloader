@@ -14,7 +14,7 @@
   --fo-text-b-color: #000;
   --bg-foot-color: linear-gradient(25deg, #f10505, #db168f, #318aff);
   --padding-xl: 40px 60px;
-  --padding-lg: 40px;
+  --padding-lg: 35px 65px;
   --padding-md: 20px 5px;
 }
 
@@ -608,6 +608,9 @@
   .laren-title p {
     font-size: 1rem;
   }
+  .laren-content-card {
+    width: 100%;
+  }
 }
 @media (max-width: 767px) {
   .laren-container {
@@ -752,7 +755,7 @@
 }
 .fqa-content {
   padding-top: 30px;
-  width: 680px;
+  width: 750px;
 }
 .fqa-list {
   list-style: none;
@@ -797,4 +800,25 @@
   font-family: var(--fo-Outfit);
   font-weight: 200;
   padding: 10px;
+}
+@media (max-width: 767px) {
+  .fqa {
+    padding: var(--padding-md);
+  }
+  .fqa h1 {
+    font-size: 1.5rem;
+  }
+  .fqa p {
+    font-size: 1rem;
+  }
+  .fqa-content {
+    width: 100%;
+  }
+  #fqa-list-h3 {
+    font-size: 0.9rem;
+  }
+  .fqa-list p {
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
 }
